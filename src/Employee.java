@@ -36,14 +36,14 @@ public class Employee {
 //     *@param TODO A variable of type TODO
 //     *@param TODO A variable of type TODO
      */
-    public String Employee(String empName, String empJobTitle, double empSalary, int empYearsOfExperience, int empYearsAtCompany, int empVacationTime){
+    public String Employee(String empName, String empJobTitle, double empSalary, int empYearsOfExperience, int empYearsAtCompany, int empVacationTime) {
         //TODO
-        name = empName;
-        jobTitle = empJobTitle;
-        baseSalary = empSalary;
-        yearsOfExperience = empYearsOfExperience;
-        yearsAtCompany = empYearsAtCompany;
-        vacationTime = empVacationTime;
+        this.name = empName;
+        this.jobTitle = empJobTitle;
+        this.baseSalary = empSalary;
+        this.yearsOfExperience = empYearsOfExperience;
+        this.yearsAtCompany = empYearsAtCompany;
+        this.vacationTime = empVacationTime;
         return "";
     }
 
@@ -67,15 +67,21 @@ public class Employee {
      * Returns a generic employee motto
      * @return A valueof data type String
      */
-    public String motto(){
-        return "私が来た";
+    public String empMotto(){
+        return "Motto: ";
     }
+
     public static void main(String[] args) {
         Employee tw = new TechnicalWriters();
         System.out.println(tw.toString());
+
         Employee engr = new Engineers();
         System.out.println(engr.toString());
+
         Employee pM = new ProductManagers();
         System.out.println(pM.toString());
+
+        FailureAnalysisEngineers faEngr = new FailureAnalysisEngineers();
+        System.out.println(faEngr.toString());
     }
 }
